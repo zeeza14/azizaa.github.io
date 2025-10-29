@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Maratul Azizah - XI TKJ 1</title>
+    
+    <style>
+        /* Variabel Warna Biru */
+        :root {
+            --primary-blue: #007bff; /* Biru terang utama */
+            --dark-blue-bg: #1f2a40; /* Biru sangat gelap untuk latar */
+            --medium-blue-card: #2c3e50; /* Biru gelap untuk card/kontainer */
+            --light-text: #ecf0f1; /* Teks putih keabu-abuan */
+            --accent-color: #3498db; /* Biru sedang untuk aksen */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-blue-bg);
+            color: var(--light-text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* HEADER */
+        header {
+            background-color: var(--medium-blue-card);
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-blue);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: var(--light-text);
+        }
+
+        header p {
+            color: var(--primary-blue);
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        /* SECTION UTAMA */
+        .section-card {
+            background-color: var(--medium-blue-card);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-card h2 {
+            color: var(--accent-color);
+            border-left: 4px solid var(--primary-blue);
+            padding-left: 15px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        /* DATA PRIBADI GRID */
+        .data-pribadi {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 10px;
+        }
+        
+        .data-pribadi strong {
+            color: var(--primary-blue);
+        }
+
+        /* KEMAMPUAN (SKILLS) TAGS */
+        .skills-list, .organisasi-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list li {
+            background-color: var(--primary-blue);
+            color: var(--medium-blue-card);
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .organisasi-list li {
+            background-color: #5d6d7e; /* Abu-abu biru */
+            color: var(--light-text);
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        /* PRESTASI LIST */
+        .prestasi-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .prestasi-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .prestasi-list li::before {
+            content: '🏆'; /* Emoji Piala */
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-size: 1.1em;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #34495e;
+            color: #b0c4de;
+        }
+
+        /* Responsif Sederhana */
+        @media (max-width: 600px) {
+            .data-pribadi {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>MARATUL AZIZAH</h1>
+            <p>Instagram & TikTok @mrtlzah </p>
+        </header>
+
+        <section class="section-card">
+            <h2>Data Pribadi</h2>
+            <div class="data-pribadi">
+                <div><strong>Nama Lengkap</strong></div>
+                <div>Maratul Azizah</div>
+                
+                <div><strong>Kelas / Jurusan</strong></div>
+                <div>XI Teknik Komputer Jaringan 1</div>
+                
+                <div><strong>Asal Sekolah</strong></div>
+                <div>SMK Negeri 1 Surabaya</div>
+            </div>
+        </section>
+
+        <section class="section-card">
+            <h2>Tentang Saya</h2>
+            <p>
+                Saya adalah siswi SMK jurusan Teknik Komputer dan Jaringan (TKJ) dengan minat kuat di bidang networking, keamanan jaringan dan teknologi. Saya siap belajar dan bersemangat untuk mencari pengalaman tentang IT dengan pengembangan skill serta berkontribusi aktif dalam tim guna mengembangkan kemampuan teknis. 
+                <br><br>
+                Saya juga cukup aktif dalam kemampuan editing foto ataupun video yang dimana juga terlibat langsung dengan teknologi. Selain itu, saya juga memiliki minat tinggi dalam bidang kesenian dan kepemimpinan, yang diwujudkan melalui kegiatan menari hingga paskibra.
+            </p>
+        </section>
+
+        <section class="section-card">
+            <h2>Kemampuan (Skills)</h2>
+            <ul class="skills-list">
+                <li>Microsoft Office</li>
+                <li>Google Drive</li>
+                <li>Canva (Desain Grafis)</li>
+                <li>Administrasi Server</li>
+                <li>Administrasi Sistem</li>
+                <li>Networking (Dasar)</li>
+                <li>Bahasa Indonesia</li>
+                <li>Bahasa Inggris</li>
+            </ul>
+        </section>
+        
+        <section class="section-card">
+            <h2>Organisasi & Kepemimpinan</h2>
+            <ul class="organisasi-list">
+                <li>Surabaya Next Leader</li>
+                <li>Karang Taruna RW - Remaja Masjid</li>
+                <li>Koordinasi Perpisahan Angkatan</li>
+                <li>Paskibra SMK Negeri 1 Surabaya</li>
+            </ul>
+        </section>
+
+        <section class="section-card">
+            <h2>Prestasi & Penghargaan</h2>
+            <ul class="prestasi-list">
+                <li>*2025:* Juara Umum, Juara Utama 1 Reguler, Juara Utama 2 Best Of Best, Best PBB 1, Best Like Instagram, Best Like TikTok | LKBB Singhasari tingkat Jawa Timur / Paskibra</li>
+                <li>*2025:* Juara Madya 1 LKBB Jayabaya tingkat Jawa Timur / Paskibra</li>
+                <li>*2025:* Juara Madya 1 LKBB Sila tingkat Jawa Timur / Paskibra</li>
+                <li>*2025:* Juara 3 Madya LKBB Asean season 3 tingkat Jawa Timur / Paskibra</li>
+                <li>*2025:* Juara Harapan 2 LOBB Bangsa tingkat Jawa Timur / Paskibra</li>
+                <li>*2025:* Juara Harapan 3 LKBB Unitomo tingkat Jawa Timur / Paskibra</li>
+                <li>*2025:* Juara Caraka 2 LKBB Sancaka tingkat Jawa Timur / Paskibra</li>
+                <li>*2024:* Juara Favorite Film Pendek Hari Anti Korupsi tingkat kota Surabaya / Kejaksaan</li>
+                <li>*2024:* Juara 1 Lomba Jurnalistik tingkat kota Surabaya / Sekolah Wijaya Putra</li>
+                <li>*2022:* Juara Harapan 2 Film Pendek Hari Pahlawan tingkat Surabaya / Bakesbangpol</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Portofolio Maratul Azizah.</p>
+    </footer>
+</body>
+</html>
